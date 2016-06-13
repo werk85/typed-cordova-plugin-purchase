@@ -1,5 +1,6 @@
 {
   "name": "cordova-plugin-purchase",
   "main": "index.d.ts",
-  "author": "Malte Legenhausen <legenhausen@werk85.de>"
+  "author": "Malte Legenhausen <legenhausen@werk85.de>",
+  "version": ">=6.0.0"
 }
