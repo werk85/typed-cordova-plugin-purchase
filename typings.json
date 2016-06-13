@@ -1,0 +1,5 @@
+{
+  "name": "cordova-plugin-purchase",
+  "main": "index.d.ts",
+  "author": "Malte Legenhausen <legenhausen@werk85.de>"
+}
