@@ -70,18 +70,14 @@ declare namespace store {
 
   export interface ITransaction {
     id: string;
+    // Android only
     type: TransactionType;
-  }
-
-  export interface IInAppBillingTransaction {
-    developerPayload: string;
-    purchaseToken: string;
-    receipt: string;
-  }
-
-  export interface IInAppPurchaseTransaction extends ITransaction {
-    appStoreReceipt: string;
-    transactionReceipt: string;
+    developerPayload?: string;
+    purchaseToken?: string;
+    receipt?: string;
+    // iOS only
+    appStoreReceipt?: string;
+    transactionReceipt?: string;
   }
 
   export interface IRegisterRequest {
@@ -102,7 +98,7 @@ declare namespace store {
     price: string;
     state: StoreProductState;
     title: string;
-    transaction: IInAppBillingTransaction & IInAppPurchaseTransaction
+    transaction: ITransaction;
     valid: boolean;
     verify: () => void;
   }
