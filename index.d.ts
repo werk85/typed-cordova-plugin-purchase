@@ -24,11 +24,11 @@ declare namespace store {
   }
 
   export interface IValidatorCallback {
-    (success: boolean, data: any);
+    (success: boolean, data: any): void;
   }
 
   export interface IValidator {
-    (product: IStoreProduct, callback: IValidatorCallback);
+    (product: IStoreProduct, callback: IValidatorCallback): void;
   }
 
   export interface IStore {
@@ -43,14 +43,14 @@ declare namespace store {
 
     error(callback: (err: IError) => void): void;
     get(id: string): IStoreProduct;
-    once(query: string, action: string, callback): void;
+    once(query: string, action: string, callback: any): void;
     register(request: IRegisterRequest): void;
     when(query: string): IWhen;
     when(action: string, query: string, callback: (product: IStoreProduct) => void): IWhen;
-    ready(callback: () => void);
+    ready(callback: () => void): void;
     refresh(): void;
     off(callback: Function): void;
-    order(id: string);
+    order(id: string): void;
   }
 
   export type TransactionType = 'ios-appstore' | 'android-playstore';
