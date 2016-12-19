@@ -1,0 +1,20 @@
+{
+  "name": "typed-cordova-plugin-purchase",
+  "version": "1.0.0",
+  "description": "Type definitions for cordova-plugin-purchase",
+  "main": "",
+  "typings": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/werk85/typed-cordova-plugin-purchase.git"
+  },
+  "author": "Malte Legenhausen <legenhausen@werk85.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/werk85/typed-cordova-plugin-purchase/issues"
+  },
+  "homepage": "https://github.com/werk85/typed-cordova-plugin-purchase#readme"
+}
